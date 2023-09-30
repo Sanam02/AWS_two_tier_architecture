@@ -1,0 +1,11 @@
+# Ignore build artifacts
+build/
+dist/
+
+# Ignore temporary files
+*.tmp
+
+# Ignore sensitive information
+.env
+api_key.txt
+
