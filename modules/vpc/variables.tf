@@ -5,3 +5,5 @@ variable private_subnet_3a {}
 variable private_subnet_4b{}
 variable private_subnet_5a {}
 variable private_subnet_6b {}
+variable region {}
+variable project_name {}
