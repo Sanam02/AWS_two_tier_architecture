@@ -4,7 +4,7 @@ resource "aws_db_subnet_group" "db-subnet" {
 }
 
 resource "aws_db_instance" "db" {
-  identifier              = "bookdb-instance"
+  identifier              = "WaveCafedb-instance"
   engine                  = "mysql"
   engine_version          = "5.7"
   instance_class          = "db.t2.micro"
@@ -24,6 +24,6 @@ resource "aws_db_instance" "db" {
   db_subnet_group_name = aws_db_subnet_group.db-subnet.name
 
   tags = {
-    Name = "bookdb"
+    Name = "WaveCafedb"
   }
 }
