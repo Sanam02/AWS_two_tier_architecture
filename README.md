@@ -65,6 +65,11 @@ additional_domain_name = ""
 ## ✈️ Now we are ready to deploy our application on the cloud ⛅
 get into the project directory
 ```sh
+cd root_module
+```
+👉 let install dependency to deploy the application 
+
+```sh
 terraform init
 ```
 
