@@ -13,3 +13,18 @@ Create an S3 bucket to store the .tfstate file in the remote backend
 ### Create a DynamoDB table for state file locking
 - Give the table a name
 - make sure to add a `Partition key` with name `LockID` and type as `String`
+
+### Generate a public-private key pair for our instances
+We need a public key and private key for our server so please follow the procedure I've included below.
+
+```sh
+cd modules/key/
+ssh-keygen
+```
+The aove command asks for the key name and then gives `client_key` it will create pair of keys one public and one private. You can give any name you want but then you need to edit the Terraform file
+
+Edit the blow file according to your configuration
+```sh
+vim root/backend.tf
+```
+Add the blow code in root/backend.tf
