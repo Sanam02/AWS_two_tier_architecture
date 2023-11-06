@@ -77,7 +77,7 @@ terraform init
 
 Type the below command to see the plan of the execution
 ```sh
-terrafoem plan
+terraform plan
 ```
 
 ✨Finally, HIT the below command to deploy the application...
