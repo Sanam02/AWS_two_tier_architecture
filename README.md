@@ -27,4 +27,57 @@ Edit the blow file according to your configuration
 ```sh
 vim root/backend.tf
 ```
-Add the blow code in root/backend.tf
+Add the below code in root/backend.tf
+```sh
+terraform {
+  backend "s3" {
+    bucket = "BUCKET_NAME"
+    key    = "backend/FILE_NAME_TO_STORE_STATE.tfstate"
+    region = "us-east-1"
+    dynamodb_table = "dynamoDB_TABLE_NAME"
+  }
+}
+```
+### 🏠 Let's set up the variable for our Infrastructure
+### 🔐 ACM certificate
+Go to AWS console --> AWS Certificate Manager (ACM) and make sure you have a valid certificate in Issued status, if not , feel free to create one and use the domain name on which you are planning to host your application.
+### 👨‍💻 Route 53 Hosted Zone
+Go to AWS Console --> Route53 --> Hosted Zones and ensure you have a public hosted zone available, if not create one.
+
+Add the below content into the `root/terraform.tfvars` file and add the values of each variable.
+```javascript
+region = ""
+project_name = ""
+vpc_cidr                = ""
+public_subnet_1a        = ""
+public_subnet_2b        = ""
+private_subnet_3a        = ""
+private_subnet_4b        = ""
+private_subnet_5a        = ""
+private_subnet_6b        = ""
+db_username = ""
+db_password = ""
+certificate_domain_name = ""
+additional_domain_name = ""
+
+```
+
+## ✈️ Now we are ready to deploy our application on the cloud ⛅
+get into the project directory
+```sh
+terraform init
+```
+
+Type the below command to see the plan of the execution
+```sh
+terrafoem plan
+```
+
+✨Finally, HIT the below command to deploy the application...
+```sh
+terraform apply 
+```
+
+Type `yes`, and it will prompt you for approval..
+
+**Thank you so much for reading..😅**
