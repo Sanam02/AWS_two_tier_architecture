@@ -87,6 +87,8 @@ terraform apply
 
 Type `yes`, and it will prompt you for approval..
 
-**Thank you so much for reading..😅**
-
+## Below you can see the result of this Architecture deployment for Cafe Website 
+1. Terraform plan 
 ![](https://github.com/Sanam02/AWS_two_tier_architecture/blob/main/images/Terraformplan_1.png) 
+![](https://github.com/Sanam02/AWS_two_tier_architecture/blob/main/images/Terraformplan2_2.png)
+**Thank you so much for reading..😅**
