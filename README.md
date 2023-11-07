@@ -88,7 +88,35 @@ terraform apply
 Type `yes`, and it will prompt you for approval..
 
 ## Below you can see the result of this Architecture deployment for Cafe Website 
-1. Terraform plan 
+## 1. Terraform plan 
 ![](https://github.com/Sanam02/AWS_two_tier_architecture/blob/main/images/Terraformplan_1.png) 
 ![](https://github.com/Sanam02/AWS_two_tier_architecture/blob/main/images/Terraformplan2_2.png)
+
+## 2. Terraform apply
+
+![](https://github.com/Sanam02/AWS_two_tier_architecture/blob/main/images/apply_3.png)
+
+## 3. Apply complete! You can see added resources
+![](https://github.com/Sanam02/AWS_two_tier_architecture/blob/main/images/Complete_4.png)
+
+## 4. Now we can co AWS console and check the created resources:
+## VPC
+![](https://github.com/Sanam02/AWS_two_tier_architecture/blob/main/images/VPC.png)
+## Instances
+![](https://github.com/Sanam02/AWS_two_tier_architecture/blob/main/images/Instances.png)
+## Auto scaling group
+![](https://github.com/Sanam02/AWS_two_tier_architecture/blob/main/images/Auto_scaling.png)
+## Target group
+![](https://github.com/Sanam02/AWS_two_tier_architecture/blob/main/images/Target_gr.png)
+
+## 5. Finally now we can see the User interface (UI) of the website " Wave Cafe"
+![](https://github.com/Sanam02/AWS_two_tier_architecture/blob/main/images/Screen%20Shot%202023-11-06%20at%2012.32.46%20PM.png)
+
+![](https://github.com/Sanam02/AWS_two_tier_architecture/blob/main/images/Screen%20Shot%202023-11-06%20at%2012.33.02%20PM.png)
+
+![](https://github.com/Sanam02/AWS_two_tier_architecture/blob/main/images/Screen%20Shot%202023-11-06%20at%2012.33.15%20PM.png)
+
+![](https://github.com/Sanam02/AWS_two_tier_architecture/blob/main/images/Screen%20Shot%202023-11-06%20at%2012.33.39%20PM.png)
+
+
 **Thank you so much for reading..😅**
