@@ -89,4 +89,4 @@ Type `yes`, and it will prompt you for approval..
 
 **Thank you so much for reading..😅**
 
-![] (https://github.com/Sanam02/AWS_two_tier_architecture/blob/main/images/Terraformplan_1.png) 
+![](https://github.com/Sanam02/AWS_two_tier_architecture/blob/main/images/Terraformplan_1.png) 
